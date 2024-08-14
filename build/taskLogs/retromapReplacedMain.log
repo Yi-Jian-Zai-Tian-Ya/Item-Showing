@@ -1,0 +1,91 @@
+Processing 6 files
+Start Processing: is/IS.java
+New Key: class net/minecraftforge/fml/common/Mod
+Import: is.proxy.CommonProxy
+Import: net.minecraftforge.fml.common.Mod
+Import: net.minecraftforge.fml.common.Mod.EventHandler
+Import: net.minecraftforge.fml.common.SidedProxy
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.network.NetworkRegistry
+End  Processing: is/IS.java
+
+Start Processing: is/ItemShowing.java
+FOUND CONSTR method is/ItemShowing/ItemShowing ()V is/ItemShowing
+Rename field net/minecraft/network/NetHandlerPlayServer/player[1379,1385]::player->field_147369_b
+Rename field net/minecraft/entity/Entity/world[1394,1399]::world->field_70170_p
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[1429,1445]::addScheduledTask->func_152344_a
+Rename field net/minecraft/network/NetHandlerPlayServer/player[1579,1585]::player->field_147369_b
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[1828,1847]::getHeldItemMainhand->func_184614_ca
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[1868,1875]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/getDisplayName ()Ljava/lang/String;[2105,2119]::getDisplayName->func_82833_r
+Rename method net/minecraft/util/text/ITextComponent/getStyle ()Lnet/minecraft/util/text/Style;[2246,2254]::getStyle->func_150256_b
+Rename method net/minecraft/util/text/Style/setHoverEvent (Lnet/minecraft/util/text/event/HoverEvent;)Lnet/minecraft/util/text/Style;[2262,2275]::setHoverEvent->func_150209_a
+New Key: class net/minecraft/util/text/event/HoverEvent
+Rename method net/minecraft/server/MinecraftServer/getPlayerList ()Lnet/minecraft/server/management/PlayerList;[2355,2368]::getPlayerList->func_184103_al
+Rename method net/minecraft/server/management/PlayerList/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2372,2383]::sendMessage->func_148539_a
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[2441,2448]::getName->func_70005_c_
+Import: io.netty.buffer.ByteBuf
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.entity.EntityPlayerSP
+Import: net.minecraft.entity.Entity
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.entity.player.EntityPlayerMP
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.server.MinecraftServer
+Import: net.minecraft.util.IThreadListener
+Import: net.minecraft.util.text.ITextComponent
+Import: net.minecraft.util.text.TextComponentString
+Import: net.minecraft.util.text.TextComponentTranslation
+Import: net.minecraft.util.text.event.HoverEvent
+Import: net.minecraft.world.World
+Import: net.minecraft.world.WorldServer
+Import: net.minecraftforge.fml.common.FMLCommonHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessage
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.MessageContext
+End  Processing: is/ItemShowing.java
+
+Start Processing: is/PacketHandler.java
+Import: net.minecraftforge.fml.common.network.NetworkRegistry
+Import: net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper
+Import: net.minecraftforge.fml.relauncher.Side
+End  Processing: is/PacketHandler.java
+
+Start Processing: is/client/ClientEventHandler.java
+New Key: class net/minecraftforge/fml/common/gameevent/TickEvent
+New Key: class net/minecraftforge/fml/common/gameevent/TickEvent
+Rename method net/minecraft/client/settings/KeyBinding/isPressed ()Z[657,666]::isPressed->func_151468_f
+Import: is.ItemShowing
+Import: is.PacketHandler
+Import: is.proxy.ClientProxy
+Import: net.minecraftforge.fml.common.Mod.EventBusSubscriber
+Import: net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+Import: net.minecraftforge.fml.common.gameevent.TickEvent
+Import: net.minecraftforge.fml.relauncher.Side
+End  Processing: is/client/ClientEventHandler.java
+
+Start Processing: is/proxy/ClientProxy.java
+Rename field net/minecraft/client/Minecraft/world[1386,1391]::world->field_71441_e
+Import: is.client.ClientEventHandler
+Import: net.minecraft.client.settings.KeyBinding
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.world.World
+Import: net.minecraftforge.client.settings.KeyConflictContext
+Import: net.minecraftforge.common.MinecraftForge
+Import: net.minecraftforge.fml.client.FMLClientHandler
+Import: net.minecraftforge.fml.client.registry.ClientRegistry
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: org.lwjgl.input.Keyboard
+End  Processing: is/proxy/ClientProxy.java
+
+Start Processing: is/proxy/CommonProxy.java
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.world.World
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.network.IGuiHandler
+End  Processing: is/proxy/CommonProxy.java
+
