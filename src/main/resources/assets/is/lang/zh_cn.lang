@@ -1,0 +1,4 @@
+#KeyBinding - 快捷键
+keybind.item_showing=展示物品
+#Message - 消息
+message.show=<%1$s> §a诸位~ 且看此宝§b[%2$s§b]
